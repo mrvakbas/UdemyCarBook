@@ -1,0 +1,12 @@
+﻿using MediatR;
+using UdemyCarBook.Domain.Entities;
+
+namespace UdemyCarBook.Application.Features.Mediator.Commands.CarFeatureCommands
+{
+    public class CreateCarFeatureByCarCommand : IRequest
+    {
+        public int CarID { get; set; }
+        public int FeatureID { get; set; }
+        public bool Availeble { get; set; }
+    }
+}
